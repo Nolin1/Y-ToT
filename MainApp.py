@@ -7,14 +7,14 @@ chances = 0
 while(found!=True):
 
     num = int(input("Enter a number: "))
-    
+    chances+=1
     if(number == num):
         print("Currect guess!!")
         found = True
         break
     else:
         print("Wrong guess!!")
-    chances+=1
+    
     if(chances>=5):
         break
 if(found == True):
